@@ -92,8 +92,27 @@ extern "C"
 #define GPIO24               (19u)
 #define GPIO25               (20u)
 
-
-
+/*
+ * PWM pins
+ */
+#define PIN_SERVO1               (2ul)
+#define PIN_SERVO2               (PIN_SERVO1 + 1)
+#define PIN_SERVO3               (PIN_SERVO1 + 2)
+#define PIN_SERVO4               (PIN_SERVO1 + 3)
+#define PIN_SERVO5               (PIN_SERVO1 + 4)
+#define PIN_SERVO6               (PIN_SERVO1 + 5)
+#define PIN_SERVO7               (PIN_SERVO1 + 6)
+#define PIN_SERVO8               (PIN_SERVO1 + 7)
+  
+static const uint8_t SERVO1 = PIN_SERVO1;
+static const uint8_t SERVO2 = PIN_SERVO2;
+static const uint8_t SERVO3 = PIN_SERVO3;
+static const uint8_t SERVO4 = PIN_SERVO4;
+static const uint8_t SERVO5 = PIN_SERVO5;  
+static const uint8_t SERVO6 = PIN_SERVO6;
+static const uint8_t SERVO7 = PIN_SERVO7;
+static const uint8_t SERVO8 = PIN_SERVO8;
+  
 /*
  * Analog pins
  */
@@ -106,6 +125,11 @@ static const uint8_t A0  = PIN_A0;
 static const uint8_t A1  = PIN_A1;
 static const uint8_t A2  = PIN_A2;
 static const uint8_t A3  = PIN_A3;
+
+static const uint8_t RCC1  = PIN_A0;
+static const uint8_t RCC2  = PIN_A1;
+static const uint8_t RCC3  = PIN_A2;
+static const uint8_t RCC4  = PIN_A3;
 
 #define PIN_DAC1             (30ul)
 static const uint8_t DAC1 = PIN_DAC1;
@@ -173,7 +197,7 @@ static const uint8_t SCK1  = PIN_SPI1_SCK ;
 /*
  * Wire Interfaces
  */
-#define WIRE_INTERFACES_COUNT 1
+#define WIRE_INTERFACES_COUNT 3
 
 #define PIN_WIRE_SDA         (21u)
 #define PIN_WIRE_SCL         (22u)
@@ -183,21 +207,21 @@ static const uint8_t SCK1  = PIN_SPI1_SCK ;
 static const uint8_t SDA = PIN_WIRE_SDA;
 static const uint8_t SCL = PIN_WIRE_SCL;
 
-// #define PIN_WIRE1_SDA         (31u)
-// #define PIN_WIRE1_SCL         (32u)
-// #define PERIPH_WIRE1          sercom1
-// #define WIRE1_IT_HANDLER      SERCOM1_Handler
-//
-// static const uint8_t SDA1 = PIN_WIRE1_SDA;
-// static const uint8_t SCL1 = PIN_WIRE1_SCL;
+#define PIN_WIRE1_SDA         (31u)
+#define PIN_WIRE1_SCL         (32u)
+#define PERIPH_WIRE1          sercom1
+#define WIRE1_IT_HANDLER      SERCOM1_Handler
 
-// #define PIN_WIRE2_SDA         (42u)
-// #define PIN_WIRE2_SCL         (43u)
-// #define PERIPH_WIRE2          sercom0
-// #define WIRE2_IT_HANDLER      SERCOM0_Handler
-//
-// static const uint8_t GROVE_SDA = PIN_WIRE2_SDA;
-// static const uint8_t GROVE_SCL = PIN_WIRE2_SCL;
+static const uint8_t SDA1 = PIN_WIRE1_SDA;
+static const uint8_t SCL1 = PIN_WIRE1_SCL;
+
+#define PIN_WIRE2_SDA         (42u)
+#define PIN_WIRE2_SCL         (43u)
+#define PERIPH_WIRE2          sercom0
+#define WIRE2_IT_HANDLER      SERCOM0_Handler
+
+static const uint8_t GROVE_SDA = PIN_WIRE2_SDA;
+static const uint8_t GROVE_SCL = PIN_WIRE2_SCL;
 
 
 /*

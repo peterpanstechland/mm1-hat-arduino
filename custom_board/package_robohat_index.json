@@ -25,6 +25,49 @@
           "toolsDependencies":
           [
             {
+              "name": "Robo HAT Boards",
+              "architecture": "samd",
+              "version": "0.0.25",
+              "category": "Contributed",
+              "url": "https://github.com/robotics-masters/mm1-hat-arduino/blob/master/custom_board/RoboHat-0.0.25.zip?raw=true",
+              "archiveFileName": "RoboHat-0.0.25.zip",
+              "checksum": "SHA-256:410f5d8faa73d00e32f32cb6425dd61f82ce6ccaa4e390db4f565cf4ea88c0e3",
+              "size": "8702986",
+              "boards": [
+                {
+                  "name": "Robo HAT MM1"
+                }
+              ],
+              "toolsDependencies":
+              [
+                {
+                  "packager": "arduino",
+                  "name": "arm-none-eabi-gcc",
+                  "version": "7-2017q4"
+                },
+                {
+                  "packager": "arduino",
+                  "name": "bossac",
+                  "version": "1.8.0-48-gb176eee"
+                },
+                {
+                  "packager": "arduino",
+                  "name": "openocd",
+                  "version": "0.10.0-arduino9"
+                },
+                {
+                  "packager": "arduino",
+                  "name": "CMSIS",
+                  "version": "4.5.0"
+                },
+                {
+                  "packager": "arduino",
+                  "name": "CMSIS-Atmel",
+                  "version": "1.2.0"
+                }
+              ]
+            },
+            {
               "packager": "arduino",
               "name": "arm-none-eabi-gcc",
               "version": "7-2017q4"
