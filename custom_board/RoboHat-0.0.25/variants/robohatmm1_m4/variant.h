@@ -57,7 +57,7 @@ extern "C"
  *----------------------------------------------------------------------------*/
 
 // Number of pins defined in PinDescription array
-#define PINS_COUNT           (45u)
+#define PINS_COUNT           (46u)
 #define NUM_DIGITAL_PINS     (27u)
 #define NUM_ANALOG_INPUTS    (7u)
 #define NUM_ANALOG_OUTPUTS   (2u)
@@ -131,7 +131,9 @@ static const uint8_t RCC2  = PIN_A1;
 static const uint8_t RCC3  = PIN_A2;
 static const uint8_t RCC4  = PIN_A3;
 
-#define PIN_DAC1             (30ul)
+#define PIN_DAC0             (30ul)
+static const uint8_t DAC0 = PIN_DAC0;
+#define PIN_DAC1             (31ul)
 static const uint8_t DAC1 = PIN_DAC1;
 
 #define ADC_RESOLUTION		12
@@ -151,8 +153,8 @@ static const uint8_t ATN = PIN_ATN;
 // #define PAD_SERIAL1_TX       (UART_TX_PAD_0)
 
 // SerialGPS (SERCOM5 - GPS)
-#define PIN_SERIALGPS_RX       (38ul)
-#define PIN_SERIALGPS_TX       (39ul)
+#define PIN_SERIALGPS_RX       (39ul)
+#define PIN_SERIALGPS_TX       (40ul)
 #define PAD_SERIALGPS_RX       (SERCOM_RX_PAD_1)
 #define PAD_SERIALGPS_TX      (UART_TX_PAD_0)
 
@@ -168,14 +170,14 @@ static const uint8_t ATN = PIN_ATN;
 #define SPI_INTERFACES_COUNT 2
 
 /* SPI PORT */
-#define PIN_SPI_MISO         (35u)
-#define PIN_SPI_MOSI         (36u)
-#define PIN_SPI_SCK          (37u)
+#define PIN_SPI_MISO         (36u)
+#define PIN_SPI_MOSI         (37u)
+#define PIN_SPI_SCK          (38u)
 #define PERIPH_SPI           sercom4
 #define PAD_SPI_TX           SPI_PAD_0_SCK_1
 #define PAD_SPI_RX           SERCOM_RX_PAD_3
 
-static const uint8_t SS   = 34 ;	// HW SS isn't used. Set here only for reference.
+static const uint8_t SS   = 35 ;	// HW SS isn't used. Set here only for reference.
 static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
@@ -188,7 +190,7 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
 #define PAD_SPI1_TX           SPI_PAD_0_SCK_1
 #define PAD_SPI1_RX           SERCOM_RX_PAD_2
 
-static const uint8_t SS1   = 33 ;	// HW SS isn't used. Set here only for reference.
+static const uint8_t SS1   = 34 ;	// HW SS isn't used. Set here only for reference.
 static const uint8_t MOSI1 = PIN_SPI1_MOSI ;
 static const uint8_t MISO1 = PIN_SPI1_MISO ;
 static const uint8_t SCK1  = PIN_SPI1_SCK ;
@@ -207,16 +209,16 @@ static const uint8_t SCK1  = PIN_SPI1_SCK ;
 static const uint8_t SDA = PIN_WIRE_SDA;
 static const uint8_t SCL = PIN_WIRE_SCL;
 
-#define PIN_WIRE1_SDA         (31u)
-#define PIN_WIRE1_SCL         (32u)
+#define PIN_WIRE1_SDA         (32u)
+#define PIN_WIRE1_SCL         (33u)
 #define PERIPH_WIRE1          sercom1
 #define WIRE1_IT_HANDLER      SERCOM1_Handler
 
 static const uint8_t SDA1 = PIN_WIRE1_SDA;
 static const uint8_t SCL1 = PIN_WIRE1_SCL;
 
-#define PIN_WIRE2_SDA         (42u)
-#define PIN_WIRE2_SCL         (43u)
+#define PIN_WIRE2_SDA         (43u)
+#define PIN_WIRE2_SCL         (44u)
 #define PERIPH_WIRE2          sercom0
 #define WIRE2_IT_HANDLER      SERCOM0_Handler
 
