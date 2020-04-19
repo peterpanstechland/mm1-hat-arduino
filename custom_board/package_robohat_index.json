@@ -59,12 +59,17 @@
           "url": "https://github.com/peterpanstechland/mm1-hat-arduino/blob/peter/custom_board/RoboHat-0.0.24.zip?raw=true",
           "archiveFileName": "RoboHat-0.0.24.zip",
 <<<<<<< HEAD
+<<<<<<< HEAD
           "checksum": "SHA-256:814625ce5a19db99186cf23fca2552ba1ac3425f2617f1d5da92f76615778d40",
           "size": "3650016",
 =======
           "checksum": "SHA-256:4b960d7edcb0e3d1f4dafa81c36057a55142f5b5",
           "size": "3663693",
 >>>>>>> a82fcebd9c012c2198d3b050efae8b4a50c68c8b
+=======
+          "checksum": "SHA-256:a397b23c95df4addeac62c406f48a47e8c5a6fa3d3d6346f2e1e55304b2f5931",
+          "size": "3661606",
+>>>>>>> parent of a82fceb... add latest bootloader
           "boards": [
             {
               "name": "Robo HAT MM1"
