@@ -173,7 +173,11 @@ static const uint8_t SCK1  = PIN_SPI1_SCK ;
 /*
  * Wire Interfaces
  */
+<<<<<<< HEAD
 #define WIRE_INTERFACES_COUNT 1
+=======
+#define WIRE_INTERFACES_COUNT 3
+>>>>>>> a82fcebd9c012c2198d3b050efae8b4a50c68c8b
 
 #define PIN_WIRE_SDA         (21u)
 #define PIN_WIRE_SCL         (22u)
@@ -183,6 +187,7 @@ static const uint8_t SCK1  = PIN_SPI1_SCK ;
 static const uint8_t SDA = PIN_WIRE_SDA;
 static const uint8_t SCL = PIN_WIRE_SCL;
 
+<<<<<<< HEAD
 // #define PIN_WIRE1_SDA         (31u)
 // #define PIN_WIRE1_SCL         (32u)
 // #define PERIPH_WIRE1          sercom1
@@ -198,6 +203,21 @@ static const uint8_t SCL = PIN_WIRE_SCL;
 //
 // static const uint8_t GROVE_SDA = PIN_WIRE2_SDA;
 // static const uint8_t GROVE_SCL = PIN_WIRE2_SCL;
+=======
+#define PIN_WIRE1_SDA         (31u)
+#define PIN_WIRE1_SCL         (32u)
+#define PERIPH_WIRE1          sercom1
+#define WIRE1_IT_HANDLER      SERCOM1_Handler
+>>>>>>> a82fcebd9c012c2198d3b050efae8b4a50c68c8b
+
+
+#define PIN_WIRE2_SDA         (42u)
+#define PIN_WIRE2_SCL         (43u)
+#define PERIPH_WIRE2          sercom0
+#define WIRE2_IT_HANDLER      SERCOM0_Handler
+
+static const uint8_t GROVE_SDA = PIN_WIRE2_SDA;
+static const uint8_t GROVE_SCL = PIN_WIRE2_SCL;
 
 
 /*
